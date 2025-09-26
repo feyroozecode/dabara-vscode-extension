@@ -126,8 +126,8 @@ examples/
 
 ### Construire l'extension
 ```bash
-git clone https://github.com/dabara-lang/vscode-extension
-cd vscode-extension
+git clone https://github.com/feyroozecode/dabara-vscode-extension.git
+cd dabara-vscode-extension
 npm install
 vsce package
 ```
