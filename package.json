@@ -1,0 +1,97 @@
+{
+  "name": "dabara-language-support",
+  "displayName": "Dabara Language Support",
+  "description": "Support syntaxique pour le langage Dabara (Hausa programming language)",
+  "version": "0.1.0",
+  "publisher": "dabara-lang",
+  "author": {
+    "name": "Dabara Language Team",
+    "email": "support@dabara-lang.org"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dabara-lang/vscode-extension"
+  },
+  "bugs": {
+    "url": "https://github.com/dabara-lang/vscode-extension/issues"
+  },
+  "homepage": "https://dabara-lang.org",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Syntax Highlighting"
+  ],
+  "keywords": [
+    "dabara",
+    "hausa",
+    "programming",
+    "language",
+    "nigeria",
+    "west-africa"
+  ],
+
+  "contributes": {
+    "languages": [
+      {
+        "id": "dabara",
+        "aliases": [
+          "Dabara",
+          "dabara",
+          "Hausa Programming"
+        ],
+        "extensions": [
+          ".ha",
+          ".dabara"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dabara",
+        "scopeName": "source.dabara",
+        "path": "./syntaxes/dabara.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "dabara",
+        "path": "./snippets/dabara.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "dabara.runFile",
+        "title": "Run Dabara File",
+        "category": "Dabara"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "dabara.runFile",
+        "key": "ctrl+f5",
+        "when": "editorLangId == dabara"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "dabara.runFile",
+          "when": "resourceExtname == .ha",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "package": "vsce package",
+    "install-local": "code --install-extension dabara-language-support-0.1.0.vsix"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}

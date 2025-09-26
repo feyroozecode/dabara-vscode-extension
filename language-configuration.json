@@ -1,0 +1,36 @@
+{
+  "comments": {
+    "lineComment": "//",
+    "blockComment": ["/*", "*/"]
+  },
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "\"", "close": "\"", "notIn": ["string"] },
+    { "open": "'", "close": "'", "notIn": ["string", "comment"] }
+  ],
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["\"", "\""],
+    ["'", "'"]
+  ],
+  "folding": {
+    "markers": {
+      "start": "^\\s*fara\\b",
+      "end": "^\\s*ƙare\\b"
+    }
+  },
+  "wordPattern": "[\\w\\u0180-\\u024F\\u01C4-\\u01CC\\u01E6-\\u01F0]+",
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*(fara|idan|sauran|maimaita|aiki)\\b.*$",
+    "decreaseIndentPattern": "^\\s*ƙare\\b.*$"
+  }
+}

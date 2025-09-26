@@ -1,0 +1,114 @@
+{
+  "Dabara Program": {
+    "prefix": "fara",
+    "body": [
+      "fara",
+      "  $1",
+      "ƙare"
+    ],
+    "description": "Structure complète d'un programme Dabara"
+  },
+  "Variable Declaration": {
+    "prefix": "naɗa",
+    "body": "naɗa ${1:nom} = ${2:valeur}",
+    "description": "Déclaration de variable"
+  },
+  "Print Statement": {
+    "prefix": "rubuta",
+    "body": "rubuta ${1:expression}",
+    "description": "Instruction d'affichage"
+  },
+  "Function Definition": {
+    "prefix": "aiki",
+    "body": [
+      "aiki ${1:sunan_aiki}(${2:parametres}) {",
+      "  $3",
+      "  komawa ${4:sakamakon}",
+      "}"
+    ],
+    "description": "Définition d'une fonction"
+  },
+  "If Statement": {
+    "prefix": "idan",
+    "body": [
+      "idan (${1:sharaɗi}) {",
+      "  $2",
+      "}"
+    ],
+    "description": "Instruction conditionnelle"
+  },
+  "If Else Statement": {
+    "prefix": "idansauran",
+    "body": [
+      "idan (${1:sharaɗi}) {",
+      "  $2",
+      "} sauran {",
+      "  $3",
+      "}"
+    ],
+    "description": "Instruction conditionnelle avec alternative"
+  },
+  "Loop Statement": {
+    "prefix": "maimaita",
+    "body": [
+      "maimaita (${1:sharaɗi}) {",
+      "  $2",
+      "}"
+    ],
+    "description": "Boucle de répétition"
+  },
+  "Boolean True": {
+    "prefix": "gaskiya",
+    "body": "gaskiya",
+    "description": "Valeur booléenne vraie"
+  },
+  "Boolean False": {
+    "prefix": "karya", 
+    "body": "karya",
+    "description": "Valeur booléenne fausse"
+  },
+  "Addition": {
+    "prefix": "ƙara",
+    "body": "${1:lamba1} ƙara ${2:lamba2}",
+    "description": "Opération d'addition"
+  },
+  "Subtraction": {
+    "prefix": "rage",
+    "body": "${1:lamba1} rage ${2:lamba2}",
+    "description": "Opération de soustraction"
+  },
+  "String Variable": {
+    "prefix": "naɗastring",
+    "body": "naɗa ${1:sunan} = \"${2:kalmomi}\"",
+    "description": "Déclaration d'une variable chaîne"
+  },
+  "Number Variable": {
+    "prefix": "naɗanumber",
+    "body": "naɗa ${1:sunan} = ${2:0}",
+    "description": "Déclaration d'une variable numérique"
+  },
+  "Hello World": {
+    "prefix": "sannu",
+    "body": [
+      "fara",
+      "  rubuta \"Sannu duniya!\"",
+      "ƙare"
+    ],
+    "description": "Programme Hello World en Dabara"
+  },
+  "Simple Calculator": {
+    "prefix": "calculator",
+    "body": [
+      "fara",
+      "  naɗa lamba1 = ${1:10}",
+      "  naɗa lamba2 = ${2:5}",
+      "  naɗa jimla = lamba1 ƙara lamba2",
+      "  naɗa bambanci = lamba1 rage lamba2",
+      "  ",
+      "  rubuta \"Jimla: \" + jimla",
+      "  rubuta \"Bambanci: \" + bambanci",
+      "ƙare"
+    ],
+    "description": "Calculatrice simple en Dabara"
+  }
+}
