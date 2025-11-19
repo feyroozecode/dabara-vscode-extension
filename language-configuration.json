@@ -1,6 +1,6 @@
 {
   "comments": {
-    "lineComment": "//",
+    "lineComment": "#",
     "blockComment": ["/*", "*/"]
   },
   "brackets": [
@@ -28,9 +28,9 @@
       "end": "^\\s*ƙare\\b"
     }
   },
-  "wordPattern": "[\\w\\u0180-\\u024F\\u01C4-\\u01CC\\u01E6-\\u01F0]+",
+  "wordPattern": "[\\w\\u0180-\\u024F]+",
   "indentationRules": {
-    "increaseIndentPattern": "^\\s*(fara|idan|sauran|maimaita|aiki)\\b.*$",
+    "increaseIndentPattern": "^\\s*(fara|idan|sauran|dabadara|maimaita|aiki)\\b.*$",
     "decreaseIndentPattern": "^\\s*ƙare\\b.*$"
   }
 }

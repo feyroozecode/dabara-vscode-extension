@@ -2,11 +2,12 @@
   "name": "dabara-language-support",
   "displayName": "Dabara Language Support",
   "description": "Support syntaxique pour le langage Dabara (Hausa programming language)",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "publisher": "dabara-lang",
   "author": {
     "name": "Dabara Language Team",
-    "email": "support@dabara-lang.org"
+    "email": "support@dabara-lang.org",
+    "url": "https://dabara-lang.org"
   },
   "license": "MIT",
   "repository": {
@@ -63,6 +64,13 @@
         "path": "./snippets/dabara.json"
       }
     ],
+    "themes": [
+      {
+        "label": "Dabara Default",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dabara-theme.json"
+      }
+    ],
     "commands": [
       {
         "command": "dabara.runFile",
@@ -89,6 +97,12 @@
   },
   "scripts": {
     "package": "vsce package",
+    "install-local": "code --install-extension dabara-language-support-0.1.0.vsix"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}    "package": "vsce package",
     "install-local": "code --install-extension dabara-language-support-0.1.0.vsix"
   },
   "devDependencies": {

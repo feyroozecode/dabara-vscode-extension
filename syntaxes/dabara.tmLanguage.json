@@ -26,6 +26,9 @@
     },
     {
       "include": "#booleans"
+    },
+    {
+      "include": "#lists"
     }
   ],
   "repository": {
@@ -33,7 +36,7 @@
       "patterns": [
         {
           "name": "keyword.control.dabara",
-          "match": "\\b(fara|ƙare|idan|sauran|maimaita|gama|komawa)\\b"
+          "match": "\\b(fara|ƙare|idan|sauran|dabadara|maimaita|gama|komawa)\\b"
         },
         {
           "name": "keyword.declaration.dabara", 
@@ -66,6 +69,33 @@
         {
           "name": "keyword.operator.dabara",
           "match": "\\+|\\-|\\*|/|%"
+        }
+      ]
+    },
+    "lists": {
+      "patterns": [
+        {
+          "name": "meta.structure.list.dabara",
+          "begin": "\\[",
+          "end": "\\]",
+          "patterns": [
+            {
+              "include": "#strings"
+            },
+            {
+              "include": "#numbers"
+            },
+            {
+              "include": "#booleans"
+            },
+            {
+              "include": "#variables"
+            },
+            {
+              "name": "punctuation.separator.list.dabara",
+              "match": ","
+            }
+          ]
         }
       ]
     },
@@ -106,6 +136,10 @@
     "comments": {
       "patterns": [
         {
+          "name": "comment.line.hash.dabara",
+          "match": "#.*$"
+        },
+        {
           "name": "comment.line.double-slash.dabara",
           "match": "//.*$"
         },
@@ -132,7 +166,7 @@
       "patterns": [
         {
           "name": "entity.name.function.dabara",
-          "match": "\\b[a-zA-ZɓɗƘƙƴʔ_][a-zA-ZɓɗƘƙƴʔ0-9_]*(?=\\s*\\()"
+          "match": "\\b[a-zA-Z\u0180-\u024F_][a-zA-Z\u0180-\u024F0-9_]*(?=\\s*\\()"
         }
       ]
     },
@@ -140,7 +174,36 @@
       "patterns": [
         {
           "name": "variable.other.dabara",
-          "match": "\\b[a-zA-ZɓɗƘƙƴʔ_][a-zA-ZɓɗƘƙƴʔ0-9_]*\\b"
+          "match": "\\b[a-zA-Z\u0180-\u024F_][a-zA-Z\u0180-\u024F0-9_]*\\b"
+        }
+      ]
+    }
+  }
+}    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.decimal.dabara",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        },
+        {
+          "name": "constant.numeric.hex.dabara",
+          "match": "\\b0[xX][0-9a-fA-F]+\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "entity.name.function.dabara",
+          "match": "\\b[a-zA-Z\u0180-\u024F_][a-zA-Z\u0180-\u024F0-9_]*(?=\\s*\\()"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.other.dabara",
+          "match": "\\b[a-zA-Z\u0180-\u024F_][a-zA-Z\u0180-\u024F0-9_]*\\b"
         }
       ]
     }

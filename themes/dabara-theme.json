@@ -1,0 +1,215 @@
+{
+  "name": "Dabara Default",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e1e",
+    "editor.foreground": "#d4d4d4",
+    "editorLineNumber.foreground": "#858585",
+    "editorCursor.foreground": "#aeafad",
+    "editor.selectionBackground": "#264f78",
+    "editor.selectionHighlightBackground": "#add6ff26"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": [
+        "comment",
+        "comment.line.hash.dabara", 
+        "comment.line.double-slash.dabara",
+        "comment.block.dabara"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#808080"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": [
+        "keyword.control.dabara",
+        "keyword.declaration.dabara",
+        "keyword.other.dabara"
+      ],
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string.quoted.double.dabara",
+        "string.quoted.single.dabara"
+      ],
+      "settings": {
+        "foreground": "#ce9178"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": [
+        "constant.numeric.decimal.dabara",
+        "constant.numeric.hex.dabara"
+      ],
+      "settings": {
+        "foreground": "#b5cea8"
+      }
+    },
+    {
+      "name": "Boolean",
+      "scope": [
+        "constant.language.boolean.dabara"
+      ],
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": [
+        "entity.name.function.dabara"
+      ],
+      "settings": {
+        "foreground": "#dcdcaa"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": [
+        "variable.other.dabara"
+      ],
+      "settings": {
+        "foreground": "#9cdcfe"
+      }
+    },
+    {
+      "name": "Operator",
+      "scope": [
+        "keyword.operator.arithmetic.dabara",
+        "keyword.operator.comparison.dabara", 
+        "keyword.operator.logical.dabara",
+        "keyword.operator.assignment.dabara",
+        "keyword.operator.dabara"
+      ],
+      "settings": {
+        "foreground": "#d4d4d4"
+      }
+    },
+    {
+      "name": "List punctuation",
+      "scope": [
+        "punctuation.separator.list.dabara",
+        "meta.structure.list.dabara"
+      ],
+      "settings": {
+        "foreground": "#d4d4d4"
+      }
+    }
+  ]
+}{
+  "name": "Dabara Default",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e1e",
+    "editor.foreground": "#d4d4d4",
+    "editorLineNumber.foreground": "#858585",
+    "editorCursor.foreground": "#aeafad",
+    "editor.selectionBackground": "#264f78",
+    "editor.selectionHighlightBackground": "#add6ff26"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": [
+        "comment",
+        "comment.line.hash.dabara", 
+        "comment.line.double-slash.dabara",
+        "comment.block.dabara"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#808080"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": [
+        "keyword.control.dabara",
+        "keyword.declaration.dabara",
+        "keyword.other.dabara"
+      ],
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string.quoted.double.dabara",
+        "string.quoted.single.dabara"
+      ],
+      "settings": {
+        "foreground": "#ce9178"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": [
+        "constant.numeric.decimal.dabara",
+        "constant.numeric.hex.dabara"
+      ],
+      "settings": {
+        "foreground": "#b5cea8"
+      }
+    },
+    {
+      "name": "Boolean",
+      "scope": [
+        "constant.language.boolean.dabara"
+      ],
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": [
+        "entity.name.function.dabara"
+      ],
+      "settings": {
+        "foreground": "#dcdcaa"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": [
+        "variable.other.dabara"
+      ],
+      "settings": {
+        "foreground": "#9cdcfe"
+      }
+    },
+    {
+      "name": "Operator",
+      "scope": [
+        "keyword.operator.arithmetic.dabara",
+        "keyword.operator.comparison.dabara", 
+        "keyword.operator.logical.dabara",
+        "keyword.operator.assignment.dabara",
+        "keyword.operator.dabara"
+      ],
+      "settings": {
+        "foreground": "#d4d4d4"
+      }
+    },
+    {
+      "name": "List punctuation",
+      "scope": [
+        "punctuation.separator.list.dabara",
+        "meta.structure.list.dabara"
+      ],
+      "settings": {
+        "foreground": "#d4d4d4"
+      }
+    }
+  ]
+}

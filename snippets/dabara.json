@@ -104,11 +104,141 @@
       "  naɗa lamba2 = ${2:5}",
       "  naɗa jimla = lamba1 ƙara lamba2",
       "  naɗa bambanci = lamba1 rage lamba2",
+      "  naɗa sakamako_ninka = lamba1 ninka lamba2",
+      "  naɗa sakamako_raba = lamba1 raba lamba2",
       "  ",
       "  rubuta \"Jimla: \" + jimla",
       "  rubuta \"Bambanci: \" + bambanci",
+      "  rubuta \"Ninka: \" + sakamako_ninka",
+      "  rubuta \"Raba: \" + sakamako_raba",
       "ƙare"
     ],
-    "description": "Calculatrice simple en Dabara"
+    "description": "Calculatrice complète avec tous les opérateurs"
+  },
+  "Multiplication": {
+    "prefix": "ninka",
+    "body": "${1:lamba1} ninka ${2:lamba2}",
+    "description": "Opération de multiplication"
+  },
+  "Division": {
+    "prefix": "raba",
+    "body": "${1:lamba1} raba ${2:lamba2}",
+    "description": "Opération de division"
+  },
+  "User Input": {
+    "prefix": "karɓa",
+    "body": [
+      "rubuta \"${1:message}: \"",
+      "naɗa ${2:variable} = karɓa"
+    ],
+    "description": "Entrée utilisateur avec message"
+  },
+  "Interactive Program": {
+    "prefix": "interactive",
+    "body": [
+      "fara",
+      "  rubuta \"${1:Sannu! Rubuta sunanka}: \"",
+      "  naɗa suna = karɓa",
+      "  rubuta \"Sannu \" + suna + \"!\"",
+      "ƙare"
+    ],
+    "description": "Programme interactif avec entrée utilisateur"
+  },
+  "Comment Line": {
+    "prefix": "#",
+    "body": "# ${1:commentaire}",
+    "description": "Commentaire ligne (style Python)"
+  },
+  "Dabadara Condition": {
+    "prefix": "dabadara",
+    "body": [
+      "dabadara (${1:sharaɗi}) {",
+      "  $2",
+      "}"
+    ],
+    "description": "Condition dabadara alternative"
+  },
+  "Dabadara with Else": {
+    "prefix": "dabadarasauran",
+    "body": [
+      "dabadara (${1:sharaɗi}) {",
+      "  $2",
+      "} sauran {",
+      "  $3",
+      "}"
+    ],
+    "description": "Condition dabadara avec alternative"
+  },
+  "List Declaration": {
+    "prefix": "jerin",
+    "body": "naɗa ${1:sunan_jerin} = [${2:abu1}, ${3:abu2}, ${4:abu3}]",
+    "description": "Déclaration d'une liste"
+  },
+  "Empty List": {
+    "prefix": "jeringudu",
+    "body": "naɗa ${1:sunan_jerin} = []",
+    "description": "Déclaration d'une liste vide"
+  },
+  "String List": {
+    "prefix": "jerinstring",
+    "body": "naɗa ${1:sunan_jerin} = [\"${2:abu1}\", \"${3:abu2}\", \"${4:abu3}\"]",
+    "description": "Liste de chaînes de caractères"
+  },
+  "Number List": {
+    "prefix": "jerinnumber",
+    "body": "naɗa ${1:sunan_jerin} = [${2:1}, ${3:2}, ${4:3}]",
+    "description": "Liste de nombres"
+  },
+  "Math Operations": {
+    "prefix": "mathops",
+    "body": [
+      "# Opérateurs mathématiques Dabara",
+      "naɗa a = ${1:10}",
+      "naɗa b = ${2:3}",
+      "naɗa jimla = a ƙara b      # Addition",
+      "naɗa bambanci = a rage b   # Soustraction",
+      "naɗa sakamako = a ninka b  # Multiplication",
+      "naɗa rabo = a raba b       # Division"
+    ],
+    "description": "Toutes les opérations mathématiques"
+  }
+}      "} sauran {",
+      "  $3",
+      "}"
+    ],
+    "description": "Condition dabadara avec alternative"
+  },
+  "List Declaration": {
+    "prefix": "jerin",
+    "body": "naɗa ${1:sunan_jerin} = [${2:abu1}, ${3:abu2}, ${4:abu3}]",
+    "description": "Déclaration d'une liste"
+  },
+  "Empty List": {
+    "prefix": "jeringudu",
+    "body": "naɗa ${1:sunan_jerin} = []",
+    "description": "Déclaration d'une liste vide"
+  },
+  "String List": {
+    "prefix": "jerinstring",
+    "body": "naɗa ${1:sunan_jerin} = [\"${2:abu1}\", \"${3:abu2}\", \"${4:abu3}\"]",
+    "description": "Liste de chaînes de caractères"
+  },
+  "Number List": {
+    "prefix": "jerinnumber",
+    "body": "naɗa ${1:sunan_jerin} = [${2:1}, ${3:2}, ${4:3}]",
+    "description": "Liste de nombres"
+  },
+  "Math Operations": {
+    "prefix": "mathops",
+    "body": [
+      "# Opérateurs mathématiques Dabara",
+      "naɗa a = ${1:10}",
+      "naɗa b = ${2:3}",
+      "naɗa jimla = a ƙara b      # Addition",
+      "naɗa bambanci = a rage b   # Soustraction",
+      "naɗa sakamako = a ninka b  # Multiplication",
+      "naɗa rabo = a raba b       # Division"
+    ],
+    "description": "Toutes les opérations mathématiques"
   }
 }
